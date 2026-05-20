@@ -3,16 +3,39 @@ import Script from "next/script";
 import Link from "next/link";
 import "./globals.css";
 
+const siteUrl = "https://pdf-tools-xi-brown.vercel.app";
+
 export const metadata: Metadata = {
-  title: "PDFGratis - Herramientas PDF Online y Gratuitas",
-  description:
-    "Comprime, fusiona y divide PDFs gratis online. Sin registro, sin límites. Procesa tus archivos directamente en tu navegador.",
-  keywords: "comprimir pdf, fusionar pdf, dividir pdf, borrar paginas pdf, rotar pdf, marca de agua pdf, pdf a imagen, firmar pdf gratis",
-  openGraph: {
-    title: "PDFGratis - Herramientas PDF Online",
-    description: "Comprime, fusiona y divide PDFs gratis. Sin registro.",
-    type: "website",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "PDFGratis — Herramientas PDF Online 100% Gratuitas",
+    template: "%s | PDFGratis",
   },
+  description:
+    "Comprime, fusiona, divide, rota y firma PDFs gratis online. Sin registro, sin límites. Tus archivos nunca salen de tu navegador.",
+  keywords: [
+    "comprimir pdf gratis", "fusionar pdf online", "dividir pdf", "borrar paginas pdf",
+    "rotar pdf", "marca de agua pdf", "pdf a imagen", "firmar pdf gratis",
+    "herramientas pdf online", "convertir pdf", "editar pdf gratis",
+  ],
+  authors: [{ name: "PDFGratis" }],
+  creator: "PDFGratis",
+  publisher: "PDFGratis",
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  openGraph: {
+    title: "PDFGratis — Herramientas PDF Online Gratuitas",
+    description: "Comprime, fusiona, divide, rota y firma PDFs gratis. Sin registro. 100% en tu navegador.",
+    type: "website",
+    url: siteUrl,
+    siteName: "PDFGratis",
+    locale: "es_MX",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PDFGratis — Herramientas PDF Online Gratuitas",
+    description: "Comprime, fusiona, divide y firma PDFs gratis. Sin registro.",
+  },
+  alternates: { canonical: siteUrl },
 };
 
 export default function RootLayout({
@@ -51,6 +74,22 @@ export default function RootLayout({
           </div>
         </header>
 
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              name: "PDFGratis",
+              url: siteUrl,
+              description: "Herramientas PDF 100% gratuitas online. Comprime, fusiona, divide, rota y firma PDFs sin registro.",
+              applicationCategory: "UtilitiesApplication",
+              operatingSystem: "Web",
+              offers: { "@type": "Offer", price: "0", priceCurrency: "MXN" },
+              inLanguage: "es",
+            }),
+          }}
+        />
         <main className="flex-1">{children}</main>
 
         <footer className="bg-gray-800 text-gray-300 py-8 mt-12">

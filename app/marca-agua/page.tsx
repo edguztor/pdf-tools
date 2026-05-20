@@ -3,8 +3,11 @@ import MarcaAguaTool from "@/components/MarcaAguaTool";
 import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
-  title: "Añadir Marca de Agua a PDF Gratis — PDFGratis",
-  description: "Añade marca de agua a tu PDF gratis. Personaliza el texto, opacidad, color y ángulo. Sin registro, procesamiento en tu navegador.",
+  title: "Añadir Marca de Agua a PDF Gratis Online — Sin Registro",
+  description: "Agrega marca de agua a tu PDF gratis online. Personaliza texto, opacidad, color y ángulo. Añade CONFIDENCIAL, BORRADOR o cualquier texto. Sin registro, 100% privado.",
+  keywords: ["marca de agua pdf gratis", "watermark pdf online", "añadir marca agua pdf", "confidencial pdf", "sellar pdf gratis"],
+  alternates: { canonical: "https://pdf-tools-xi-brown.vercel.app/marca-agua" },
+  openGraph: { title: "Añadir Marca de Agua a PDF Gratis", description: "Agrega texto de marca de agua a tu PDF al instante. Gratis y sin registro.", type: "website" },
 };
 
 export default function MarcaAguaPage() {

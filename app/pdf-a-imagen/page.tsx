@@ -3,8 +3,11 @@ import PdfImagenTool from "@/components/PdfImagenTool";
 import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
-  title: "Convertir PDF a Imagen PNG JPG Gratis — PDFGratis",
-  description: "Convierte páginas de PDF a imágenes PNG o JPG gratis. Alta resolución, descarga individual o ZIP con todas las páginas.",
+  title: "Convertir PDF a Imagen PNG JPG Gratis Online",
+  description: "Convierte páginas de PDF a imágenes PNG o JPG gratis online. Alta resolución HD. Descarga imágenes individuales o todas en ZIP. Sin registro, sin instalar nada.",
+  keywords: ["pdf a imagen gratis", "convertir pdf a png", "pdf a jpg online", "pdf to image", "pasar pdf a imagen gratis"],
+  alternates: { canonical: "https://pdf-tools-xi-brown.vercel.app/pdf-a-imagen" },
+  openGraph: { title: "Convertir PDF a Imagen Gratis Online", description: "Convierte cada página de tu PDF a PNG o JPG en segundos. Gratis y sin registro.", type: "website" },
 };
 
 export default function PdfImagenPage() {

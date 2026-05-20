@@ -3,8 +3,11 @@ import DividirTool from "@/components/DividirTool";
 import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
-  title: "Dividir PDF Gratis Online — PDFGratis",
-  description: "Extrae páginas o divide tu PDF en múltiples archivos, gratis y sin registro. Procesamiento en tu navegador.",
+  title: "Dividir PDF Gratis Online — Separar Páginas PDF",
+  description: "Divide y separa tu PDF en múltiples archivos gratis. Extrae páginas individuales o rangos. Sin registro, sin límites. Todo en tu navegador.",
+  keywords: ["dividir pdf", "separar pdf gratis", "extraer paginas pdf", "split pdf online", "cortar pdf gratis"],
+  alternates: { canonical: "https://pdf-tools-xi-brown.vercel.app/dividir" },
+  openGraph: { title: "Dividir PDF Gratis Online", description: "Separa tu PDF en varios archivos al instante. Gratis y sin registro.", type: "website" },
 };
 
 export default function DividirPage() {

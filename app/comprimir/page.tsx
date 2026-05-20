@@ -3,8 +3,11 @@ import ComprimirTool from "@/components/ComprimirTool";
 import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
-  title: "Comprimir PDF Gratis Online — PDFGratis",
-  description: "Reduce el tamaño de tu PDF gratis y sin registro. Procesamiento directo en tu navegador, 100% privado.",
+  title: "Comprimir PDF Gratis Online — Sin Registro",
+  description: "Comprime y reduce el tamaño de tu PDF gratis online. Sin registro, sin límites. Procesamiento 100% en tu navegador, tus archivos nunca se suben a ningún servidor.",
+  keywords: ["comprimir pdf", "reducir tamaño pdf", "comprimir pdf gratis", "comprimir pdf online", "pdf más pequeño"],
+  alternates: { canonical: "https://pdf-tools-xi-brown.vercel.app/comprimir" },
+  openGraph: { title: "Comprimir PDF Gratis Online", description: "Reduce el tamaño de tu PDF al instante. Gratis y sin registro.", type: "website" },
 };
 
 export default function ComprimirPage() {

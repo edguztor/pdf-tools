@@ -3,8 +3,11 @@ import RotarTool from "@/components/RotarTool";
 import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
-  title: "Rotar Páginas de PDF Gratis — PDFGratis",
-  description: "Rota páginas de tu PDF 90°, 180° o 270° gratis y sin registro. Selecciona páginas individuales o todas a la vez.",
+  title: "Rotar PDF Gratis Online — Girar Páginas PDF Sin Registro",
+  description: "Rota y gira páginas de tu PDF 90°, 180° o 270° gratis online. Selecciona páginas individuales o todas a la vez. Sin registro, sin instalar nada.",
+  keywords: ["rotar pdf gratis", "girar pdf online", "rotar paginas pdf", "voltear pdf gratis", "rotate pdf online"],
+  alternates: { canonical: "https://pdf-tools-xi-brown.vercel.app/rotar" },
+  openGraph: { title: "Rotar PDF Gratis Online", description: "Gira las páginas de tu PDF al instante. Gratis y sin registro.", type: "website" },
 };
 
 export default function RotarPage() {

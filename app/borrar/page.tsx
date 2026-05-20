@@ -3,8 +3,11 @@ import BorrarTool from "@/components/BorrarTool";
 import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
-  title: "Borrar Páginas de PDF Gratis — PDFGratis",
-  description: "Elimina páginas específicas de tu PDF gratis y sin registro. Selecciona las páginas a borrar, descarga el resultado al instante.",
+  title: "Borrar Páginas de PDF Gratis — Eliminar Páginas PDF Online",
+  description: "Elimina y borra páginas específicas de tu PDF gratis online. Selecciona las páginas a eliminar y descarga el resultado al instante. Sin registro, 100% privado.",
+  keywords: ["borrar paginas pdf", "eliminar paginas pdf gratis", "quitar paginas pdf online", "delete pdf pages", "borrar pdf gratis"],
+  alternates: { canonical: "https://pdf-tools-xi-brown.vercel.app/borrar" },
+  openGraph: { title: "Borrar Páginas de PDF Gratis Online", description: "Elimina páginas de tu PDF al instante. Gratis y sin registro.", type: "website" },
 };
 
 export default function BorrarPage() {

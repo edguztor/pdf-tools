@@ -3,8 +3,11 @@ import FirmarTool from "@/components/FirmarTool";
 import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
-  title: "Firmar PDF Gratis Online — PDFGratis",
-  description: "Firma documentos PDF gratis. Dibuja tu firma con el mouse o el dedo y colócala en la página que quieras. Sin registro.",
+  title: "Firmar PDF Gratis Online — Firma Digital Sin Registro",
+  description: "Firma documentos PDF gratis online. Dibuja tu firma con el mouse o el dedo y colócala donde quieras. Firma digital sin registro, sin instalar nada, 100% privado.",
+  keywords: ["firmar pdf gratis", "firma digital pdf online", "firma electronica pdf", "sign pdf gratis", "firmar documento pdf"],
+  alternates: { canonical: "https://pdf-tools-xi-brown.vercel.app/firmar" },
+  openGraph: { title: "Firmar PDF Gratis Online", description: "Dibuja tu firma y colócala en tu PDF al instante. Gratis y sin registro.", type: "website" },
 };
 
 export default function FirmarPage() {

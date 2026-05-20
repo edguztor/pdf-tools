@@ -3,8 +3,11 @@ import FusionarTool from "@/components/FusionarTool";
 import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
-  title: "Fusionar PDFs Gratis Online — PDFGratis",
-  description: "Combina múltiples PDFs en uno solo, gratis y sin registro. Arrastra para reordenar, procesamiento en tu navegador.",
+  title: "Fusionar PDFs Gratis Online — Unir PDF Sin Registro",
+  description: "Une y combina múltiples archivos PDF en uno solo gratis. Sin registro, sin límites. Arrastra para reordenar las páginas. Procesamiento 100% en tu navegador.",
+  keywords: ["fusionar pdf", "unir pdf gratis", "combinar pdf online", "juntar pdf", "merge pdf gratis"],
+  alternates: { canonical: "https://pdf-tools-xi-brown.vercel.app/fusionar" },
+  openGraph: { title: "Fusionar PDFs Gratis Online", description: "Une varios PDFs en uno solo al instante. Gratis y sin registro.", type: "website" },
 };
 
 export default function FusionarPage() {
