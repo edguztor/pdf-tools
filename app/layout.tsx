@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     description: "Comprime, fusiona, divide y firma PDFs gratis. Sin registro.",
   },
   alternates: { canonical: siteUrl },
+  verification: { google: "zel00yVDEZH37EwPriiDFQGBojDNpYQa5n5oz7KcpDc" },
 };
 
 export default function RootLayout({
