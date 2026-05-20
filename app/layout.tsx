@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="es" className="h-full">
       <head>
-        {/* Google AdSense — reemplaza con tu publisher ID */}
+        {/* Google AdSense */}
         <Script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8285676413297966"
           crossOrigin="anonymous"
           strategy="lazyOnload"
         />
