@@ -24,11 +24,10 @@ export default function RootLayout({
     <html lang="es" className="h-full">
       <head>
         {/* Google AdSense */}
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8285676413297966"
           crossOrigin="anonymous"
-          strategy="lazyOnload"
         />
       </head>
       <body className="min-h-full flex flex-col">
