@@ -1,37 +1,37 @@
 "use client";
+import { useEffect, useRef } from "react";
 
-interface AdBannerProps {
-  slot?: string;
-  format?: "horizontal" | "rectangle" | "vertical";
+declare global {
+  interface Window { adsbygoogle: unknown[] }
+}
+
+interface Props {
+  slot: string;
+  format?: "auto" | "horizontal" | "rectangle" | "vertical";
   className?: string;
 }
 
-export default function AdBanner({
-  format = "horizontal",
-  className = "",
-}: AdBannerProps) {
-  const sizes = {
-    horizontal: "h-24",
-    rectangle: "h-64",
-    vertical: "h-96",
-  };
+export default function AdBanner({ slot, format = "auto", className = "" }: Props) {
+  const pushed = useRef(false);
+
+  useEffect(() => {
+    if (pushed.current) return;
+    pushed.current = true;
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch {}
+  }, []);
 
   return (
-    <div
-      className={`bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-gray-400 text-sm ${sizes[format]} ${className}`}
-    >
-      [Publicidad — Google AdSense]
-      {/*
-        Para activar AdSense real, reemplaza este div con:
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-          data-ad-slot="XXXXXXXXXX"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        />
-      */}
+    <div className={`overflow-hidden text-center ${className}`}>
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-8285676413297966"
+        data-ad-slot={slot}
+        data-ad-format={format}
+        data-full-width-responsive="true"
+      />
     </div>
   );
 }

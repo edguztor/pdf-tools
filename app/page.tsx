@@ -71,7 +71,7 @@ export default function Home() {
 
       {/* Ad */}
       <div className="max-w-5xl mx-auto px-4 py-4">
-        <AdBanner format="horizontal" />
+        <AdBanner slot="2956781430" format="horizontal" />
       </div>
 
       {/* Tool Grid */}
@@ -112,7 +112,7 @@ export default function Home() {
 
       {/* Ad */}
       <div className="max-w-5xl mx-auto px-4 pb-8">
-        <AdBanner format="horizontal" />
+        <AdBanner slot="2956781430" format="horizontal" />
       </div>
 
       {/* Features */}
