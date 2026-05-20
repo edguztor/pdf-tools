@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: #e53935;
+  --primary-dark: #c62828;
+  --background: #f8f9fa;
+  --foreground: #1a1a2e;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.drop-zone {
+  border: 2px dashed #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.drop-zone:hover,
+.drop-zone.active {
+  border-color: var(--primary);
+  background-color: #fff5f5;
+}
+
+.tool-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(229, 57, 53, 0.15);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.progress-bar {
+  transition: width 0.4s ease;
 }
