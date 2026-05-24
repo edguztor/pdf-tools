@@ -6,7 +6,7 @@ declare global {
 }
 
 interface Props {
-  slot: string;
+  slot?: string;
   format?: "auto" | "horizontal" | "rectangle" | "vertical";
   className?: string;
 }

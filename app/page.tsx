@@ -9,6 +9,7 @@ import RotarTool from "@/components/RotarTool";
 import MarcaAguaTool from "@/components/MarcaAguaTool";
 import PdfImagenTool from "@/components/PdfImagenTool";
 import FirmarTool from "@/components/FirmarTool";
+import OcrTool from "@/components/OcrTool";
 import AdBanner from "@/components/AdBanner";
 
 const tools = [
@@ -20,6 +21,7 @@ const tools = [
   { id: "marca-agua",  icon: "💧", label: "Marca de agua",   desc: "Añade texto semitransparente",             color: "#0891b2", bg: "bg-cyan-50",   border: "border-cyan-200",   ring: "ring-cyan-400"   },
   { id: "pdf-imagen",  icon: "🖼️", label: "PDF a Imagen",    desc: "Convierte páginas a PNG o JPG",            color: "#ec4899", bg: "bg-pink-50",   border: "border-pink-200",   ring: "ring-pink-400"   },
   { id: "firmar",      icon: "✍️", label: "Firmar PDF",      desc: "Dibuja y añade tu firma",                  color: "#4f46e5", bg: "bg-indigo-50", border: "border-indigo-200", ring: "ring-indigo-400" },
+  { id: "ocr",         icon: "🔍", label: "Imagen a Texto",  desc: "Extrae texto de imágenes con OCR",         color: "#0891b2", bg: "bg-sky-50",    border: "border-sky-200",    ring: "ring-sky-400"    },
 ] as const;
 
 type ToolId = typeof tools[number]["id"];
@@ -33,6 +35,7 @@ const TOOL_COMPONENTS: Record<ToolId, React.FC> = {
   "marca-agua": MarcaAguaTool,
   "pdf-imagen": PdfImagenTool,
   firmar:     FirmarTool,
+  ocr:        OcrTool,
 };
 
 const features = [
